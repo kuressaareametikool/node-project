@@ -1,4 +1,10 @@
-
+* {
+    font-family: 'Nunito Sans', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+}
 .chat {
     display: flex;
     flex-direction: row;
@@ -15,6 +21,72 @@
     padding: 0.5rem;
 }
 
+/* .wrapper-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    border: 1px solid black;
+    padding: 0.5rem
+} */
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    margin-top: 10rem;
+}
+
+.input-title {
+    text-align: center;
+    position: relative;
+    right: 8rem;
+    margin-top: 1rem;
+} 
+
+.input-div {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    height: 4rem;
+}
+
+.input {
+    padding: 0.5rem 1.5rem;
+    font-size: 1.5em;
+    background-color: #C4C4C4;
+    border: none;
+    border-radius: .5rem;
+}
+
+.title {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.btn {
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    border: none;
+    background-color: #C4C4C4;
+    border-radius: .5rem;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
 /* NO NEED THIS CSS - just for custom scrollbar which can also be configured in tailwind.config.js*/
 
 ::-webkit-scrollbar {

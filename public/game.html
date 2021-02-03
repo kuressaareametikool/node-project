@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/css/game.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <h1>word guessing game</h1>
+        
+        <p id="word"></p>
+        <input type="text" id="guess" maxlength="1">
+        <button onclick="guess()">Guess a letter</button>
+        <p id="nope"></p>
+        <div class="guesses-container">
+            <p>Letters guessed: <span id="guessed"></span></p>
+            <p>Guesses left: <span id="guesses"></span></p>
+        </div>
+
+        <p id="lose"></p>
+        </div>
+    <script src="/public/js/game.js"></script>
+</body>
+</html>
