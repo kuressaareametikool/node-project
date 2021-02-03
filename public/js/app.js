@@ -22,10 +22,10 @@ socket.on('connection', userId => {
 
 socket.on('updateUserList', userListObj => {
     userList.innerHTML = "";
-    for (const userName in userListObj) {
+    for (const username in userListObj) {
         userList.innerHTML += `
         <div>
-            <p>${ userName }</p>
+            <p>${ username }</p>
         </div>`;
     }
 });

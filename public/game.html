@@ -1,26 +1,46 @@
-<!DOCTYPE html>
+<!--Referenced Lab 3-->
+<!DOCTYPE HTML>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/public/css/game.css">
-    <title>Document</title>
-</head>
-<body>
-    <div id="container">
-        <h1>word guessing game</h1>
-        
-        <p id="word"></p>
-        <input type="text" id="guess" maxlength="1">
-        <button onclick="guess()">Guess a letter</button>
-        <p id="nope"></p>
-        <div class="guesses-container">
-            <p>Letters guessed: <span id="guessed"></span></p>
-            <p>Guesses left: <span id="guesses"></span></p>
-        </div>
-
-        <p id="lose"></p>
-        </div>
-    <script src="/public/js/game.js"></script>
-</body>
+   <head>
+      <title>Guess the Word</title>
+      <link rel="stylesheet" type="text/css" href="/public/css/game.css" />
+      <meta charset="utf-8" />
+   </head>
+   <body>
+      <div class="page-wrapper">
+         <main class="flex-container">
+            <!--GAME-->
+            <div id="game" class="flex-container">
+               <h1>Guess the Word</h1>
+               <div id="letter-container">
+                  <ul id="letters"></ul>
+               </div>
+               <div id="lives"></div>
+               <div id="guessed-word"></div>
+               <div id="result"></div>
+               <div id="button-container" class="button-container"></div>
+            </div>
+            <!--CHAT-->
+            <div id="chat-container" class="flex-container">
+               <div id="users-container" class="flex-container-column">
+                  <h2>Chat Users</h2>
+                  <div id="userCount"></div>
+                  <ul id="users"></ul>
+                  <a href="/public/index.html" id="leave-chat">Leave Game</a>
+               </div>
+               <div id="message-container" class="flex-container-column">
+                  <ul id="messages" class="flex-container-column"></ul>
+                  <form id="message-box" class="flex-container">
+                     <input type="text" id="text-message" autocomplete="off" />
+                     <input type="submit" id="send-message" value="Send" />
+                  </form>
+               </div>
+            </div>
+         </main>
+      </div>
+      <!-- end of page wrapper-->
+      <script src="/socket.io/socket.io.js"></script>
+      <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+      <script src="/public/js/script.js"></script>
+   </body>
 </html>
