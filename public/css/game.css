@@ -1,0 +1,25 @@
+* {
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    padding: 0px;
+    margin: 0px;
+}
+#word {
+    letter-spacing: 5px;
+}
+#lose {
+    font-size: 2em;
+}
+p {
+    margin: 2rem;
+}
+#container {
+    width: 50%;
+    height: 20rem;
+    text-align: center;
+    border: 1px solid black;
+    background-color: white;
+}
+.guesses-container{
+    display: flex;
+    justify-content: center;
+}
