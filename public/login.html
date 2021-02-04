@@ -4,30 +4,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/public/css/style.css">
     <title>Login</title>
 </head>
 
 <body>
-    <div>
-        <form x-data="{password: '',password_confirm: ''}">
-            <div>
-                <label for="username">Username</label>
-                <input placeholder="" id="username" type="text" />
-            </div>
-            
-            <div>
-                <label for="password">Password</label>
-                <input placeholder="" id="password" type="password" x-model="password" />
-            </div>
-            
-            <div>
-                <button type="button" id="login-button">Login</button>
-            </div>
-            <div>
-                <a href="/public/register.html" id="register-button">Register</a>
-            </div>
-        </form>
+    <div class="wrapper-wrap">
+        <h1 class="title">WORD GUESS CHAT & PLAY ROOM</h1>
+        <div class="wrapper">
+            <form x-data="{password: '',password_confirm: ''}">
+                <div>
+                    <div class="input-title">
+                        <label for="username">Username:</label>
+                    </div>
+                    <div class="input-div">
+                        <input class="input" placeholder="" id="username" type="text" />
+                    </div>
+                </div>
+                
+                <div>
+                    <div class="input-title">
+                        <label for="password">Password:</label>
+                    </div>
+                    <div class="input-div">
+                        <input class="input" placeholder="" id="password" type="password" x-model="password" />
+                    </div>
+                </div>
+                
+                <div class="btn">
+                    <a href="/public/index.html" id="login-button">LOGIN</a>
+                </div>
+                <div class="btn">
+                    <a href="/public/register.html" id="register-button">REGISTER</a>
+                </div>
+            </form>
+        </div>
     </div>
     <script src="/public/js/login.js"></script>
 </body>

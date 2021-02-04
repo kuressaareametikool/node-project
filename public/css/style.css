@@ -1,4 +1,10 @@
-
+* {
+    font-family: 'Nunito Sans', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+}
 .chat {
     display: flex;
     flex-direction: row;
@@ -15,46 +21,69 @@
     padding: 0.5rem;
 }
 
-/* NO NEED THIS CSS - just for custom scrollbar which can also be configured in tailwind.config.js*/
+/* .wrapper-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    border: 1px solid black;
+    padding: 0.5rem
+} */
 
-::-webkit-scrollbar {
-    width: 2px;
-    height: 2px;
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    margin-top: 10rem;
 }
 
-::-webkit-scrollbar-button {
-    width: 0px;
-    height: 0px;
+.input-title {
+    text-align: center;
+    position: relative;
+    right: 8rem;
+    margin-top: 1rem;
+} 
+
+.input-div {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    height: 4rem;
 }
 
-::-webkit-scrollbar-thumb {
-    background: #2d3748;
-    border: 0px none #ffffff;
-    border-radius: 50px;
+.input {
+    padding: 0.5rem 1.5rem;
+    font-size: 1.5em;
+    background-color: #C4C4C4;
+    border: none;
+    border-radius: .5rem;
 }
 
-::-webkit-scrollbar-thumb:hover {
-    background: #2b6cb0;
+.title {
+    text-align: center;
+    margin-top: 1.5rem;
 }
 
-::-webkit-scrollbar-thumb:active {
-    background: #000000;
+.btn {
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    border: none;
+    background-color: #C4C4C4;
+    border-radius: .5rem;
+    width: 100%;
 }
 
-::-webkit-scrollbar-track {
-    background: #1a202c;
-    border: 0px none #ffffff;
-    border-radius: 50px;
-}
-
-::-webkit-scrollbar-track:hover {
-    background: #666666;
-}
-
-::-webkit-scrollbar-track:active {
-    background: #333333;
-}
-
-::-webkit-scrollbar-corner {
-    background: transparent;
+a {
+    text-decoration: none;
+    color: black;
 }
