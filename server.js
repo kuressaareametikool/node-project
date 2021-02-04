@@ -148,6 +148,10 @@ io.on('connection', (socket) => {
         delete userList[sess.username];
         io.emit('updateUserList', userList);
     });
+
+    socket.on('sendYo', data => {
+        socket.to(data.socketId).emit('reciveYo', { 'user': sess.username });
+    });
 });
 
 
