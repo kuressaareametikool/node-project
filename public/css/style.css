@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700&display=swap");
+
 * {
     font-family: 'Nunito Sans', sans-serif;
     font-style: normal;
@@ -38,6 +40,7 @@
     flex-direction: column;
     background-color: white;
     margin-top: 10rem;
+    margin-bottom: 1rem;
 }
 
 .input-title {
@@ -81,9 +84,29 @@
     background-color: #C4C4C4;
     border-radius: .5rem;
     width: 100%;
+    outline: none;
 }
 
 a {
     text-decoration: none;
     color: black;
+}
+
+.pass-conf-title {
+    text-align: center;
+    position: relative;
+    right: 6rem;
+    margin-top: 1rem;
+}
+
+.error-message {
+    text-align: center;
+    position: relative;
+    right: 5.75rem;
+}
+
+.pass-conf-error {
+    text-align: center;
+    position: relative;
+    right: 3.65rem;
 }

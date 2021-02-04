@@ -9,29 +9,46 @@
 </head>
 
 <body>
-    <div>
+    <h1 class="title">WORD GUESS CHAT & PLAY ROOM</h1>
+    <div class="wrapper">
         <h2 class="font-semibold text-white text-2xl">
             Register
         </h2>
         <span id="register-error"></span>
         <form>
-            <div>
+            <div class="input-title">
                 <label for="username">Username</label>
-                <input id="username" name="username" type="text">
+            </div>
+            <div class="input-div">
+                <input class="input" id="username" name="username" type="text">
+            </div>
+            <div class="error-message">
                 <span id="username-error"></span>
             </div>
-            <div>
+            
+            
+            <div class="input-title">
                 <label for="password">Password</label>
-                <input id="password" type="password" >
+            </div>
+            <div class="input-div">
+                <input class="input" id="password" type="password" >
+            </div>
+            <div class="error-message">
                 <span id="password-error"></span>
             </div>
-            <div>
+
+            <div class="pass-conf-title">
                 <label for="password-again">Password Confirm</label>
-                <input id="password-again" type="password" >
+            </div>
+            <div class="input-div">
+                <input class="input" id="password-again" type="password" >
+            </div>
+            <div class="pass-conf-error">
                 <span id="password-again-error"></span>
             </div>
+
             <div>
-                <button type="button" id="register-button">Register</button>
+                <button class="btn" type="button" id="register-button">Register</button>
             </div>
         </form>
     </div>
