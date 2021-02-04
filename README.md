@@ -1,61 +1,20 @@
-**Stack**
-- Node JS / JS / npm
-- Express (Node JS framework)
-- Socket.io
-- Redis
+<b>2020∕21 PROJEKT nr 3 ‒ NodeJS klient server rakendus</b>
 
---------------------------------
+<b>Tiimi liikmed:</b><br>
+Joel Pupart<br> 
+Joonas Püüding<br>
+Kenneth Lember<br>
+Kristjan Maidra<br>
+Priit Puppart<br>
+Sander Oll<br>
+Eete Rajasalu<br>
 
-**How to run**
+<b>Figma:</b>
 
-This how to explains how to run this project on Ubuntu server.
+<b>Rakendus:</b>
 
-1. Update your system
-```
-sudo apt update && sudo apt -y upgrade
-```
-2. Install the most recent version of Nodejs and npm (node packet manager). We use this repository because the normal Ubuntu repository has very old version.
-```
-curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
-sudo apt-get install -y nodejs
-```
-3. Test Nodejs
-```
-node -v
-```
-4. Test npm
-```
-npm -v
-```
-5. Install nodemon globally
-```
-sudo npm install -g nodemon
-```
-6. Install Redis
-```
-sudo apt install redis-server
-```
-7. Update redis.conf file. Find `supervised no` line and change to `supervised systemd` since Ubuntu uses the systemd init system.
-```
-sudo nano /etc/redis/redis.conf
-```
-8. Start Redis
-```
-sudo service redis-server start
-```
-9. Clone the repository
-```
-git clone https://github.com/kuressaareametikool/node-project
-```
-10. Change directory to project folder
-```
-cd node-project
-```
-11. Install modules
-```
-npm install
-```
-12. Run server
-```
-nodemon server.js
-```
+<b>Kas oleksid tahtnud täita mingit muud ülesannet selles meeskonnas?:</b>
+
+<b>Üks pehme oskus, mida õppisin ja endas arendasin:</b>
+
+<b>Üks tehniline oskus, mida õppisin ja endas arendasin:</b>
