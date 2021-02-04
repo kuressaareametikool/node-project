@@ -5,33 +5,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/public/css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
     <title>Register</title>
 </head>
 
 <body>
-    <div>
-        <h2 class="font-semibold text-white text-2xl">
-            Register
-        </h2>
+    <div class="container">
+        <h2 class="sign">Register</h2>
         <span id="register-error"></span>
-        <form>
+        <form class="register-elements">
             <div>
-                <label for="username">Username</label>
-                <input id="username" name="username" type="text">
+                <input class="username" placeholder="Username" id="username" name="username" type="text">
                 <span id="username-error"></span>
             </div>
             <div>
-                <label for="password">Password</label>
-                <input id="password" type="password" >
+                <input class="password" placeholder="Password" id="password" type="password" >
                 <span id="password-error"></span>
             </div>
             <div>
-                <label for="password-again">Password Confirm</label>
-                <input id="password-again" type="password" >
+                <input class="confirm-password" placeholder="Confirm password" id="password-again" type="password" >
                 <span id="password-again-error"></span>
             </div>
             <div>
-                <button type="button" id="register-button">Register</button>
+                <button class="submit" type="button" id="register-button">Register</button>
             </div>
         </form>
     </div>
