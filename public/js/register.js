@@ -3,6 +3,7 @@ const usernameInput = document.getElementById('username');
 const passwordInput = document.getElementById('password');
 
 registerButton.addEventListener('click', e => {
+    if (validInput) {
     console.log(314);
     const data = {username: usernameInput.value, password: passwordInput.value};
 
@@ -11,6 +12,7 @@ registerButton.addEventListener('click', e => {
         headers: {
             'Content-Type': 'application/json',
         },
+
         body: JSON.stringify(data),
     })
     .then(res => res.json())
@@ -24,5 +26,5 @@ registerButton.addEventListener('click', e => {
     .catch(error => {
         console.error('Error:', error);
     });
-
+  }
 });

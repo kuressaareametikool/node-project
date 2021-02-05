@@ -1,5 +1,6 @@
 const submit = document.getElementById("register-button");
 const regex = '/^[a-zA-Z]*$/g';
+let validInput = true;
 
 submit.addEventListener("click", validate);
 
@@ -11,6 +12,7 @@ function validate(e) {
   const passwordAgain = document.getElementById("password-again").value;
 
   if (!username || username === '' || username.length < 6) {
+    validInput = false;
     const nameError = document.getElementById("username-error");
     nameError.innerHTML = `
         <p>Username not valid!</p>
@@ -18,6 +20,7 @@ function validate(e) {
   }
 
   if(password.length < 6 || !password) {
+    validInput = false;
     const passwordError = document.getElementById("password-error");
     passwordError.innerHTML = `
         <p>Password not valid!</p>
@@ -25,6 +28,7 @@ function validate(e) {
   }
 
   if(password !== passwordAgain) {
+    validInput = false;
     const passwordAgainError = document.getElementById("password-again-error");
     passwordAgainError.innerHTML = `
         <p>Password must be the same!</p>
