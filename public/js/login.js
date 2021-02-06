@@ -4,7 +4,7 @@ const passwordInput = document.getElementById('password');
 
 
 loginButton.addEventListener('click', e => {
-    const data = {username: usernameInput.value, password: passwordInput.value};
+    const data = { username: usernameInput.value, password: passwordInput.value };
 
     fetch('/login', {
         method: 'POST',
@@ -13,14 +13,20 @@ loginButton.addEventListener('click', e => {
         },
         body: JSON.stringify(data),
     })
-    .then(res => res.json())
-    .then(data => {
-        if ( data.response == 'success' ) {
-            window.location.href = "/";
-        }
-    })
-    .catch(error => {
-        console.error('Error:', error);
-    });
+        .then(res => res.json())
+        .then(data => {
+            if (data.response == 'success') {
+                window.location.href = "/";
+            } else if (data.response == 'errorWrongCredentials') {
+                const loginError = document.getElementById('login-error');
+                loginError.innerHTML = `
+                <p>Username or password invalid!</p>
+                `
+            }
+
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
 
 });
