@@ -40,6 +40,10 @@ socket.on('updateUserList', userListObj => {
     });
 });
 
+socket.on('send note', msgObj => {
+    console.log(msgObj.note)
+});
+
 socket.on('chat_message', msgObj => {
     console.log(msgObj)
     const item = document.createElement('div');

@@ -119,6 +119,12 @@ app.post("/register", (req, res) => {
     });
 });
 
+
+app.get("/arduino", (req, res) => {
+    console.log(req.query.msg)
+    res.json({ response: 'success' });
+});
+
 app.get("/logout", (req, res) => {
     req.session.destroy(err => {
         if (err) {
@@ -140,6 +146,12 @@ io.on('connection', (socket) => {
     // On chat message from user emit to all users who are connected
     socket.on('chat_message', msg => {
         io.emit('chat_message', { 'message': msg, 'socketId': socket.id, 'user': sess.username });
+    });
+
+    // On chat message from user emit to all users who are connected
+    socket.on('send note', msg => {
+        console.log(msg);
+        io.emit('send note', { 'note': msg });
     });
 
     // On disconnect update user list
